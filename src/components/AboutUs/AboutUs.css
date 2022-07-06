@@ -1,0 +1,272 @@
+.AboutUs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.AboutUs_Image {
+  width: 100%;
+  background-image: url(../assets/SatpuraSlideOne.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0% 0% 50% 50% / 0% 0% 7% 7%;
+  position: relative;
+  z-index: 1;
+}
+.AboutUs_Image:after {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  content: "";
+  opacity: 0.7;
+  z-index: -1;
+  border-radius: 0% 0% 50% 50% / 0% 0% 7% 7%;
+}
+.AboutUs_Image .row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.AboutUs_Image .bread-crumb-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.AboutUs_Image .bread-inner{
+  height: 400px;
+  width: 100%;
+  display: table;
+}
+.AboutUs_Image .bread-crumb-inner h2{
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  
+}
+.bread-crumb-inner p{
+  color: white;
+}
+.bread-crumb-inner a{
+  text-decoration: none;
+}
+.AboutUs-Introduction-1 {
+  width: 100%;
+    display: flex;
+  flex-direction:row;
+  gap: 2rem;
+  align-items: center;
+}
+.AboutUs-SubImage img{
+  width: 80%;
+  border-radius: 10px;
+}
+.AboutUs-Introduction-1 p {
+  width: 50%;
+  word-wrap: break-word;
+  text-align: justify;
+  text-justify: inter-word;
+  word-spacing: 5px;
+  padding:2rem;
+  margin: 2rem;
+}
+.Features{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+ align-items: center;
+
+}
+.Features-Col-1{
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+margin-top: 5rem;
+  gap: 2rem;
+
+}
+.Features-Col-2{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+.Feature-Card{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.Feature-Card-icon{
+  width: 35%;
+  justify-content: center;
+}
+.Feature-Card-icon img{
+  width: 80%;
+}
+.Feature-Card-Content{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.Feature-Card-Content h3{
+  text-align: left;
+}
+
+.Feature-Card-Content p{
+  text-align: justify;
+}
+.AboutUs-SubImage {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.ImageSpec{
+  position: absolute;
+  top: 70%;
+  left: 75%;
+}
+.AboutUs-QualityBuild {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+}
+.Iso-Logo {
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+}
+.Iso-Logo img{
+  width:50%;
+}
+.First {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 2rem;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.Mission-Vision {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.Mission {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.Vision {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem;
+  border: none;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 1042px) {
+  .AboutUs-Introduction-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .AboutUs-SubImage{
+    width: 90%;
+  }
+  .AboutUs-Introduction-1 p{
+    width: 90%;
+  }
+  .Mission-Vision{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .Mission  {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .Vision {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .AboutUs-QualityBuild{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Iso-Logo{
+    align-items:center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 780px){
+  .Features{
+    flex-direction: column;
+  }
+  .Features-Col-1{
+    width: 100%;
+  }
+  .Features-Col-2{
+    width: 100%;
+  }
+  .Iso-Logo img{
+    width: 100%;
+  }
+  .First{
+    padding: 0%;
+  }
+} 
+@media only screen and (max-width: 430px){
+  .AboutUs_Image .bread-crumb-inner h2{
+   text-align: center;
+  }
+  .Feature-Card-icon img{
+    width: 100%;
+  }
+  .Feature-Card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Features-Col-1{
+    width: 100%;
+    align-items: center;
+  }
+  .AboutUs-SubImage img{
+    width: 100%;
+  }
+  .AboutUs-Introduction-1{
+    gap: 1rem;  
+  }
+}
+@media only screen and (max-width: 350px){
+  .AboutUs-Introduction-1 p{
+    width: 100%;
+  }
+}

@@ -1,0 +1,126 @@
+.productVariants{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.productVariants .head{
+    width: 100%;
+    padding-left: 5rem ;
+}
+.productVariants .wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 5rem;
+}
+.productVariants .Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+    min-width: 230px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    row-gap: 1rem;
+}
+.productVariants .Card .image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productVariants .Card button{
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: dodgerblue;
+    color: #fff;
+}
+.productVariants .Card button:hover{
+    background-color: rgb(28, 127, 226);
+}
+.productVariants .Card .image img{
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 0.5rem;
+
+}
+.productVariants .Overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.productVariants .Overlay .menu{
+    width: 50vw;
+    height: 50vh;
+    background-color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    cursor:default;
+    margin: 0;
+   
+}
+.productVariants .Overlay .menu .top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.productVariants .Overlay .menu .top button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+.productVariants .Overlay .menu .wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    padding: 1rem;
+    
+}
+.productVariants .Overlay .menu .wrapper button{
+    padding: 0.5rem 1rem;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 1rem;
+    border: 2px solid #2b3294;
+    color: #2b3294;
+    font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+    .productVariants .Overlay .menu{
+        width: 90vw;
+        height: 65vh;
+
+    }
+    .productVariants .wrapper{
+        padding: 0;
+        align-items: center;
+    }
+    .productVariants .wrapper{
+        align-items: center;
+        justify-content: center;
+    }
+}

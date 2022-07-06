@@ -1,0 +1,301 @@
+.BannerPart{
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../assets/WelcomePhoto.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border-radius: 0% 0% 50% 50% / 0% 0% 7% 7%;
+}
+.BannerPart:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 60vh;
+    background-color: #171c3a;
+    z-index: -1;
+    opacity: 0.8;
+    border-radius: 0% 0% 50% 50% / 0% 0% 7% 7%;
+  }
+  .row-Align{
+    align-items: center !important;
+    height: 60vh;
+  }
+  .banner-text{
+    display: table;
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+  }
+  .Banner-Text-Inner{
+    display: table-cell;
+    vertical-align: middle;
+    align-items: center;
+  }
+  .banner-text h1{
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0px;
+    margin-top: 28px;
+    -webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+  }
+  @-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .Dimensions{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+        justify-content: space-between;
+        margin: 2rem;
+        padding: 2rem;
+  }
+  .Dimension-Cards{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Dimension-Cards img{
+    width: 70%;
+    border: none;
+    border-radius: 10px;
+  }
+  .Dimension-Cards-Content p{
+    width: 100%;
+   display: flex;
+   flex-direction: row;
+  }
+  .row-Dimension{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      margin-top: 3rem;
+  }
+  .row-Dimension p{
+      width: 100%;
+      padding: 1rem;
+  }
+  .row-Dimension p:hover{
+    color: #fe5c24;
+  }
+  .Mods-2{
+     font-weight: 700;
+  }
+  .Acid-Proof-Brick-Introduction{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 2rem 4rem;
+  }
+  .Introduction-of-Brick{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
+  }
+  .Introduction-of-Brick h1{
+    color: #2A2D53;
+    margin-bottom: 2rem;
+  }
+  .Introduction-of-Brick p{
+      width: 80%;
+      word-wrap: break-word;
+      text-align: justify;
+  }
+  .KeyFeaturesCard{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .KeyFeaturesCard img{
+    width: 80%;
+    border-radius: 10px;
+  }
+  .WaterResistant{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+    padding: 2rem;
+  }
+  .WaterResistant h2{
+    margin-left: 1rem;
+  }
+  .WaterResistent-Row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+  .WaterResistent-Row p{
+    width: 100%;
+    text-align: left;
+  }
+  .WaterResistant-Row-Card{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  .WaterResistant-Row-Card-Content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .WaterResistant-Row-Card-Image img{
+    border-radius: 10px;
+  }
+  .Application{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .Application-Parent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Area-Card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  align-items: center;
+  }
+  .Area-Card img{
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+  }
+  @media only screen and (max-width: 780px){
+    .Acid-Proof-Brick-Introduction{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0%;
+      padding: 0%;
+    }
+    .Introduction-of-Brick{
+      width: 90%;
+      align-items: center;
+    }
+    .KeyFeaturesCard{
+      width: 100%;
+    }
+    .KeyFeaturesCard img{
+      width: 70%;
+    }
+    .WaterResistant{
+      width: 100%;
+      margin: 0%;
+      padding: 0%;
+    }
+    .WaterResistent-Row{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .WaterResistant-Row-Card{
+      width: 100%;
+    }
+    .Application{
+      width: 100%;
+      margin: 0%;
+      padding: 0%;
+    }
+  }
+  @media only screen and (max-width: 1024px){
+    .WaterResistant-Row-Card{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .WaterResistant-Row-Card-Content{
+      width: 90%;
+    }
+  }
+  @media only screen and (max-width: 430px){
+    .Introduction-of-Brick p{
+      width: 100%;
+    }
+    .KeyFeaturesCard{
+      width: 100%;
+    }
+    .KeyFeaturesCard img{
+      width: 90%;
+    }
+    .WaterResistant{
+      width: 100%;
+      margin: 0%;
+     
+    }
+    .WaterResistant h2{
+      margin-left: 1rem;
+    }
+    .WaterResistant-Row-Card{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .WaterResistant-Row-Card-Content{
+      width: 90%;
+    }
+    .Application-Parent{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .Area-Card img{
+      width: 90%;
+    }
+    .Area-Card{
+      width: 100%;
+      align-items: center;
+    }
+
+  }
